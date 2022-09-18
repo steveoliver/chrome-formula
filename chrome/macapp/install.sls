@@ -50,7 +50,7 @@ chrome-macos-app-install-macpackage:
       - cmd: chrome-macos-app-install-curl
   file.append:
     - name: '/Users/{{ chrome.rootuser }}/.bash_profile'
-    - text: 'export PATH=$PATH:/Applications/Chrome.app/Contents/MacOS/chrome'
+    - text: 'export PATH=$PATH:/Applications/Google Chrome.app/Contents/MacOS/chrome'
     - require:
       - macpackage: chrome-macos-app-install-macpackage
 
