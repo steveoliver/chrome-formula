@@ -19,5 +19,5 @@
 
 {%- if chrome.pkg.use_upstream_macapp %}
        {%- set url = chrome.pkg.macapp.uri %}
-       {%- do chrome.pkg.archive.update({ 'name': '/Applications', 'source': url }) %}
+       {%- do pkg.archive.update({ 'name': '/Applications', 'source': url }) %}
 {%- endif %}
