@@ -10,7 +10,7 @@ chrome-macos-app-clean-files:
   file.absent:
     - names:
       - {{ chrome.dir.tmp }}
-      - /Applications/Chrome.app
+      - /Applications/Google Chrome.app
 
     {%- else %}
 
